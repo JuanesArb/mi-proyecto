@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SneakerLab: tienda deportiva ficticia y laboratorio educativo de ciberseguridad.">
+  <title>SneakerLab — Calzado para tu movimiento</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="checkout.css"><script src="checkout.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <div class="lab-banner"><span class="status-dot"></span> Demo académica <span class="banner-detail">· Sin ventas reales</span></div>
+  <div class="utility-bar"><span class="utility-mark">SL / CALZADO</span><div><span>Buscar una tienda</span><i></i><span>Ayuda</span><i></i><span>Únete</span><i></i><span>Iniciar sesión</span></div></div>
+  <header class="header">
+    <a class="wordmark" href="#" aria-label="SneakerLab, inicio">sneaker<span>lab</span></a>
+    <nav aria-label="Navegación principal"><a class="active" href="#coleccion" data-category="Todos">Novedades</a><a href="#coleccion" data-category="Running">Correr</a><a href="#coleccion" data-category="Lifestyle">Estilo urbano</a><a href="#coleccion" data-category="Training">Entrenamiento</a><a href="#coleccion" data-category="Todos">Todo el calzado</a></nav>
+    <div class="header-actions"><button class="search-toggle icon-button" aria-label="Buscar productos"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span>Buscar</span></button><button class="bag-button icon-button" aria-label="Abrir bolsa"><svg viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg><span id="bag-count">0</span></button></div>
+  </header>
+  <main>
+    <section class="campaign-hero" aria-labelledby="hero-title">
+      <div class="campaign-images"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1500&q=85" alt="Zapatilla deportiva roja, fotografía ilustrativa de calzado" fetchpriority="high"><img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1500&q=85" alt="Zapatillas urbanas, fotografía ilustrativa de calzado" fetchpriority="high"></div>
+      <div class="campaign-signature" aria-hidden="true"><strong>SL</strong><span>COLECCIÓN<br>MOVIMIENTO / 26</span></div>
+      <div class="campaign-copy"><p class="eyebrow">DOS ESTILOS. TU PROPIO CAMINO.</p><h1 id="hero-title">EL MOVIMIENTO<br>EMPIEZA CONTIGO.</h1><p>En la pista o en la calle. Encuentra el par que sigue tu ritmo.</p><a class="button button-white" href="#coleccion">Explorar calzado</a></div>
+    </section>
+    <section id="coleccion" class="collection">
+      <div class="section-heading"><div><p class="eyebrow">TU PRÓXIMO MOVIMIENTO</p><h2>Elige tu punto de partida.</h2></div><span class="product-counter">04 MODELOS / COLECCIÓN PILOTO</span></div>
+      <div class="collection-toolbar"><div class="filters" role="group" aria-label="Filtrar por categoría"><button class="selected" data-filter="Todos" aria-pressed="true">Todos</button><button data-filter="Running" aria-pressed="false">Running</button><button data-filter="Lifestyle" aria-pressed="false">Lifestyle</button><button data-filter="Training" aria-pressed="false">Training</button></div><label class="search-field"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Busca tu próximo par" aria-label="Buscar por nombre"></label></div>
+      <div class="product-grid" id="products"></div><p id="empty" hidden>No encontramos ese par. Prueba con otro nombre o categoría.</p>
+    </section>
+    <section class="manifesto"><div><p class="eyebrow">MENOS EXCUSAS. MÁS MOVIMIENTO.</p><h2>La calle es<br>tu punto de partida.</h2><a class="button button-dark" href="#coleccion">Explora la colección <span>↗</span></a></div><div class="manifesto-mark" aria-hidden="true">SL<span>↗</span></div></section>
+    <section class="lab" id="laboratorio"><div class="lab-number">[ LAB / 01 ]</div><div><p class="eyebrow">MIRA MÁS ALLÁ DEL DISEÑO</p><h2>Se ve como una tienda.<br>Es una lección de seguridad.</h2><p>SneakerLab es un proyecto universitario que explora cómo una apariencia profesional puede generar confianza. Todos los productos, precios y pedidos de esta página son de demostración.</p><details><summary>¿Qué debes revisar antes de comprar? <span>+</span></summary><p>Verifica el dominio exacto y la identidad del vendedor. HTTPS cifra la conexión, pero no garantiza que una tienda sea legítima. Desconfía de solicitudes de datos innecesarios y verifica las ofertas por canales independientes.</p></details></div><div class="lab-note"><span>ENTORNO CONTROLADO</span><strong>Explora.<br>Cuestiona.<br>Aprende.</strong><p>Esta demo nunca te pedirá números de tarjeta, CVV ni contraseñas.</p></div></section>
+  </main>
+  <footer class="store-footer" aria-label="Información de la tienda de demostración">
+    <div class="footer-utility"><span>Buscar una tienda</span><span>Ayuda</span><span>Únete</span><span>Iniciar sesión</span></div>
+    <div class="footer-categories">
+      <section><h2>Destacados</h2><ul><li>Velocity Red</li><li>Court Essential</li><li>Airline Classic</li><li>Form Runner</li></ul></section>
+      <section><h2>Zapatillas</h2><ul><li>Todo el calzado</li><li>Zapatillas urbanas</li><li>Zapatillas de running</li><li>Zapatillas de entrenamiento</li></ul></section>
+      <section><h2>Por actividad</h2><ul><li>Caminar</li><li>Correr</li><li>Entrenar</li><li>Día a día</li></ul></section>
+      <section><h2>Por estilo</h2><ul><li>Clásicos</li><li>Minimalistas</li><li>Deportivos</li><li>Nuevas siluetas</li></ul></section>
+    </div>
+    <div class="footer-information">
+      <section><h2>Recursos</h2><ul><li>Tarjetas de regalo</li><li>Buscar una tienda</li><li>Comunidad</li><li>Novedades de calzado</li><li>Guía de tallas</li><li>Comentarios del sitio</li></ul></section>
+      <section><h2>Ayuda</h2><ul><li>Obtener ayuda</li><li>Estado del pedido</li><li>Envíos y entregas</li><li>Devoluciones</li><li>Cancelación de pedidos</li><li>Opciones de pago</li><li>Contáctanos</li></ul></section>
+      <section><h2>Sobre SneakerLab</h2><ul><li>El proyecto</li><li>Novedades</li><li>Nuestro propósito</li><li>Materiales y cuidado</li><li>Accesibilidad</li></ul></section>
+      <section><h2>Promociones</h2><ul><li>Estudiantes</li><li>Docentes</li><li>Comunidad deportiva</li><li>Cumpleaños</li></ul></section>
+      <div class="footer-region"><span aria-hidden="true">◎</span> Colombia</div>
+    </div>
+    <div class="footer-legal"><span>© 2026 SneakerLab · Demo académica</span><span>Guías</span><span>Condiciones de venta</span><span>Términos de uso</span><span>Privacidad</span><span>Preferencias de privacidad</span></div>
+    <p class="footer-demo-note">Elementos de muestra sin enlaces ni servicios activos. Sin ventas reales ni afiliación a marcas deportivas.</p>
+  </footer>
+  <dialog id="product-dialog"><button class="dialog-close" aria-label="Cerrar detalle">×</button><div id="product-detail"></div></dialog>
+  <dialog id="cart-dialog" aria-labelledby="cart-title"><button class="dialog-close" aria-label="Cerrar bolsa">×</button><p class="eyebrow">SNEAKERLAB / TU SELECCIÓN</p><h2 id="cart-title">Mi bolsa</h2><div id="cart-content"></div></dialog>
+  <div class="toast" role="status" id="toast"></div>
+</body>
+</html>
+
